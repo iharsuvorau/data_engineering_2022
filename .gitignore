@@ -3,3 +3,11 @@ draft/
 .idea/
 logs/
 Practice/*_Airflow/data
+
+# Python
+*.egg
+*.egg-info
+dist
+__pycache__
+*.so
+*.pyc
