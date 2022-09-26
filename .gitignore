@@ -1,2 +1,5 @@
 draft/
 *.pptx
+.idea/
+logs/
+Practice/*_Airflow/data
