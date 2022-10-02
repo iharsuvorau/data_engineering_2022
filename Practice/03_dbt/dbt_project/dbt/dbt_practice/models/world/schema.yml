@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: world_data
+    database: world
+    schema: public
+    tables:
+      - name: country
+      - name: city
+      - name: countrylanguage
+      - name: citypopulation

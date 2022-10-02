@@ -1,0 +1,14 @@
+dbt_practice:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 2
+      host: pg
+      port: 5432
+      user: root
+      pass: root
+      dbname: world
+      schema: public
+
+  target: dev
