@@ -12,3 +12,18 @@ dbt_practice:
       schema: public
 
   target: dev
+
+dbt_assignment:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 2
+      host: pg
+      port: 5432
+      user: root
+      pass: root
+      dbname: dellstore
+      schema: public
+
+  target: dev
