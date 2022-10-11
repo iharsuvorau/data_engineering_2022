@@ -1,2 +1,4 @@
-SELECT SUM(netamount)
-FROM {{ ref('valid_orders') }}
+SELECT
+    SUM(netamount)
+FROM
+    {{ ref('valid_orders') }}

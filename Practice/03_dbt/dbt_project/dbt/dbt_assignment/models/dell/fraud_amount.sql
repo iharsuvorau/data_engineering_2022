@@ -1,2 +1,4 @@
-SELECT SUM(netamount)
-FROM {{ ref('fraud_orders') }}
+SELECT
+    SUM(netamount)
+FROM
+    {{ ref('fraud_orders') }}
