@@ -1,6 +1,8 @@
 SELECT orders.orderid,
        orders.customerid,
-       orders.netamount
+       orders.netamount,
+       orders.orderdate,
+       country
 FROM {{ source('dell_data', 'orders') }} AS orders
 JOIN
     (
@@ -13,4 +15,5 @@ JOIN
         )
     ) valid_cards
 ON orders.customerid = valid_cards.customerid
+JOIN customers ON valid_cards.customerid = customers.customerid
 WHERE valid_cards.valid = 0
